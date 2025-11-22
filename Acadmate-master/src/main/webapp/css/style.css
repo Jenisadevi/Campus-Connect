@@ -1,0 +1,86 @@
+/* ==========================
+   AcadMate Global Styles
+   ========================== */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body, html {
+  height: 100%;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* --------------------------
+   Role-based Backgrounds
+   -------------------------- */
+body.admin     { background: linear-gradient(135deg,#1e3a8a,#0f172a); color:#fff; }
+body.faculty   { background: linear-gradient(135deg,#2563eb,#1e40af); color:#fff; }
+body.student   { background: linear-gradient(135deg,#059669,#047857); color:#fff; }
+body.organizer { background: linear-gradient(135deg,#f59e0b,#b45309); color:#fff; }
+
+/* --------------------------
+   Card Container
+   -------------------------- */
+.card {
+  background: rgba(255,255,255,0.08);
+  backdrop-filter: blur(8px);
+  border-radius: 16px;
+  padding: 40px;
+  width: 420px;
+  max-width: 90%;
+  text-align: center;
+  margin: 40px auto;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.25);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 40px rgba(0,0,0,0.35);
+}
+
+/* --------------------------
+   Typography
+   -------------------------- */
+h2 { font-size: 1.6rem; margin-bottom: 12px; }
+p  { color: rgba(255,255,255,0.9); margin-bottom: 16px; }
+
+/* --------------------------
+   Button Styles
+   -------------------------- */
+a.btn, button.btn {
+  background: rgba(255,255,255,0.95);
+  color: #111;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 20px;
+  text-decoration: none;
+  display: inline-block;
+  font-weight: 600;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+a.btn:hover, button.btn:hover {
+  transform: scale(1.07);
+  box-shadow: 0 6px 16px rgba(255,255,255,0.4);
+}
+
+/* --------------------------
+   Fade-in Animation
+   -------------------------- */
+.fade-in {
+  opacity: 0;
+  transform: translateY(25px);
+  animation: fadeUp 0.8s ease-out forwards;
+}
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* --------------------------
+   Utilities
+   -------------------------- */
+ul.list-unstyled { list-style: none; padding: 0; text-align: left; margin-top: 10px; }
+ul.list-unstyled li { padding: 6px 0; }
